@@ -1,0 +1,247 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+.clear {
+	clear: both;
+}
+html, body {
+	height: 100%;
+	max-width: 100%;
+}
+body {
+	background-color: #FFF;
+	color: #FFF;
+	font: 1em 'Montserrat', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.4em;
+}
+header {
+	border-bottom: 5px solid #FF0000;
+	padding: 10px 0;
+	text-align: center;
+}
+#header_logo {
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: top;
+}
+#header_title {
+	color: #30659b;
+	display: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 35px;
+	text-transform: uppercase;
+}
+
+#top {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	padding: 150px 20px;
+}
+#top.index {
+	background-image: url('/assets/images/banner1.jpg');
+}
+#top.home {
+	background-image: url('/assets/images/banner2.1.jpg');
+}
+#top_title {
+	font-size: 2.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#login, #search {
+	text-align: center;
+}
+#login .text_input, #search .text_input {
+	border: 2px solid #cbcbcb;
+	box-sizing: border-box;
+	font-size: 1.4em;
+	font-weight: bold;
+	max-width: 100%;
+	padding: 10px;
+}
+#login .text_input {
+	margin: 10px;
+	width: 250px;
+}
+#search .text_input {
+	margin: 10px 0;
+	width: 500px;
+}
+#login .button_input, #search .button_input {
+	background-color: #FF0000;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 10px;
+	text-transform: uppercase;
+	padding: 12px 15px;
+}
+
+#center {
+	background-color: #2467b2;
+	box-sizing: border-box;
+	padding: 50px 20px;
+	text-align: center;
+}
+#youtube {
+	border: 5px solid #FFF;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+#center_info {
+	box-sizing: border-box;
+	padding: 40px 0;
+}
+#center_title {
+	font-size: 2em;
+	font-weight: 800;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+#center_text {
+	font-size: 1.6em;
+	line-height: 1.2em;
+	margin-top: 40px;
+}
+
+/*Delete when replacing ad space*/
+#ad {
+	background-color: #FFF;
+	box-sizing: border-box;
+	height: 0;
+	margin: 20px auto;
+	padding-top: 40%;
+	position: relative;
+	width: 80%;
+}
+#ad_text {
+	color: #999999;
+	font-size: 2em;
+	font-weight: bold;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	transform: translateY(-50%);
+	top: 50%;
+	width: 100%;
+}
+/*End delete*/
+
+#bottom {
+	box-sizing: border-box;
+	padding: 50px 20px;
+}
+#bottom_title {
+	color: #000;
+	font-size: 1.8em;
+	font-weight: 800;
+	line-height: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+#tires {
+	margin-top: 20px;
+	text-align: center;
+}
+.tire {
+	display: inline-block;
+}
+.tire_name {
+	color: #000;
+	font-weight: 700;
+}
+.tire_type {
+	color: #777;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+footer {
+	background-color: #FF0000;
+	box-sizing: border-box;
+	padding: 20px 20px 50px;
+	text-align: center;
+}
+#footer_company, #footer_additional {
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.2em;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+	#header_logo {
+		float: left;
+		margin-left: 10%;
+	}
+	#header_title {
+		display: block;
+		float: right;
+		margin-right: 10%;
+	}
+	#top_title {
+		font-size: 4em;
+	}
+	#login {
+		margin: 20px auto 0;
+		width: 740px;
+	}
+	#center_centerer {
+		margin: 0 auto;
+		width: 1160px;
+	}
+	#youtube {
+		float: left;
+	}
+	#center_title.index {
+		text-align: left;
+	}
+	#center_info {
+		float: right;
+		padding: 40px 0 40px 40px;
+		text-align: left;
+		width: 50%;
+	}
+	#footer_company {
+		float: left;
+		margin-left: 10%;
+	}
+	#footer_additional {
+		float: right;
+		margin-right: 10%;
+	}
+}
